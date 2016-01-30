@@ -1,6 +1,5 @@
-# Likeastore Browser Extention
-
-Augments Google search results with search from your likes.
+# BackerTracker extension
+Shows the stats from your favorite crowdfunding projects
 
 ## Supported Browsers
 
@@ -12,6 +11,7 @@ Augments Google search results with search from your likes.
 
 All changes have to be applied into `/js`, `/css`, `/img` folders. To build the sources into corresponding packages run,
 
+Make sure you have installed gulp via NPM
 ```bash
 $ gulp
 ```
@@ -32,6 +32,10 @@ $ gulp dist
 
 The `/dist` folder will contain ready to dist packages (except of Safari, that require manual build).
 
+
+When developing extensions, remember to serve your assets over https
 # License
 
+Based on the Likeastore Browser extension
+https://github.com/likeastore/browser-extension
 MIT info@likeastore.com
