@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "BackerTracker",
+	"description": "Track your projects on BackerKit",
+	"version": "0.0.1",
+
+	"permissions": [
+		"tabs",
+		"https://www.kickstarter.com/projects*",
+		"https://www.indiegogo.com/projects*"
+	],
+
+	"content_scripts": [{
+		"run_at": "document_end",
+		"css": ["css/content.css"],
+		"js": [
+			"libs/jquery-2.1.1.min.js",
+			"js/browser.js",
+			"js/content.js"
+		],
+		"matches": [
+			"*://www.kickstarter.com/projects/*",
+			"*://www.indiegogo.com/projects/*"
+		]
+	}],
+
+	"icons" : {
+		"16": "img/logo_16px.png",
+		"48" : "img/logo_48px.png",
+		"128" : "img/logo_128px.png"
+	},
+
+	"web_accessible_resources": [
+		"img/*.png"
+	]
+}
