@@ -6,7 +6,7 @@
 			run: function () {
 					var path = location.pathname,
 							url = $("*[rel='canonical']").first().attr('href'),
-							prependTarget = $('.container-flex.px2');
+							prependTarget = $('.container-flex.px2').first();
 							
 							var parser = document.createElement('a');
 									parser.href = url;
