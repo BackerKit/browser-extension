@@ -84,7 +84,7 @@ gulp.task('firefox-run', shell.task([
 ]));
 
 gulp.task('dist', function(cb) {
-	return rseq('clean', ['chrome', 'firefox', 'safari'], ['chrome-dist', 'firefox-dist', 'safari-dist'], cb);
+	return rseq('clean', ['chrome', 'safari'], ['chrome-dist', 'safari-dist'], cb);
 });
 
 gulp.task('watch', function() {
