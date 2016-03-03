@@ -1,8 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "BackerTracker",
-	"description": "Track your projects on BackerKit",
-	"version": "0.0.2",
+	"name": "BackerKit Project Tracker",
+	"short_name":"BK Tracker",
+	"description": "Track your projects on BackerKit.",
+	"version": "0.0.3",
 
 	"permissions": [
 		"tabs",
