@@ -4,17 +4,42 @@
 
 		return {
 			run: function () {
-					var path = location.pathname,
-							url = $("*[rel='canonical']").first().attr('href'),
-							prependTarget = $('.container-flex.px2').first();
-							
-							var parser = document.createElement('a');
-									parser.href = url;
+					if(location.host.indexOf('kickstarter') === -1){
+						this.doIndiegogo();
+					}else{
+						this.doKickstarter();
+					}
+			},
+			
+			doKickstarter: function(){
+				var url = $("*[rel='canonical']").first().attr('href'),
+						prependTarget = $('.container-flex.px2').first();
 
-							if(prependTarget.length === 0){
-								prependTarget = $('.i-campaign-page.ng-isolate-scope');
-							}
-					$('<iframe>', {src:'https://www.backerkit.com' + parser.pathname + '/iframe', frameBorder: "0", width: prependTarget.width(), height:'352px', scrolling:'no'}).prependTo(prependTarget);
+						if(url === undefined){
+							return;
+						}
+						if(url.indexOf('creator_bio') !== -1){
+							return;
+						}
+						url = url.replace('/creator_bio')
+					
+				this.insertIframe(url, prependTarget);
+			},
+			
+			doIndiegogo: function(){
+				var url = $("*[rel='canonical']").first().attr('href').split('/x/')[0],
+						prependTarget = $('.i-campaign-page.ng-isolate-scope');
+				this.insertIframe(url, prependTarget);
+			},
+			
+			insertIframe: function(url, prependTarget){
+				if(url.indexOf('/projects') === -1){
+					return
+				}
+				var parser = document.createElement('a');
+				parser.href = url;
+				
+				$('<iframe>', {src:'https://www.backerkit.com' + parser.pathname + '/iframe', frameBorder: "0", width: prependTarget.width(), height:'352px', scrolling:'no'}).prependTo(prependTarget);
 			}
 		};
 	};
