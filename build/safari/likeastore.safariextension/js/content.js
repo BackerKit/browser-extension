@@ -28,7 +28,7 @@
 			
 			doIndiegogo: function(){
 				var url = $("*[rel='canonical']").first().attr('href').split('/x/')[0],
-						prependTarget = $('.i-campaign-page.ng-isolate-scope');
+						prependTarget = $('.campaignPage-hero');
 				this.insertIframe(url, prependTarget);
 			},
 			
