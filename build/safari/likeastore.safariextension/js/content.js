@@ -12,12 +12,13 @@
 			},
 			
 			doKickstarter: function(){
+				
 				var url = $("*[rel='canonical']").first().attr('href'),
-						prependTarget = $('.container-flex.px2').first();
+						prependTarget = $('.container-flex').first();
 
 						if(url === undefined){
 							return;
-						}
+						} 
 						if(url.indexOf('creator_bio') !== -1){
 							return;
 						}
