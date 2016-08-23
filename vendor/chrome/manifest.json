@@ -3,7 +3,7 @@
 	"name": "BackerKit BackerTracker",
 	"short_name":"BK Tracker",
 	"description": "Track your projects on BackerKit.",
-	"version": "0.0.8",
+	"version": "0.0.9",
 
 	"permissions": [
 		"tabs",

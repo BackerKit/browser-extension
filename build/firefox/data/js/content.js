@@ -24,7 +24,7 @@
 						}
 						url = url.replace('/creator_bio');
 
-					$('<iframe>', {src:'http://www.backerkit.dev/master_backer_accounts/iframe', frameBorder: "0", width: '100%', height:'40px', scrolling:'no'}).prependTo($('body'));
+					$('<iframe>', {src:'https://www.backerkit.com/master_backer_accounts/iframe', frameBorder: "0", width: '100%', height:'40px', scrolling:'no'}).prependTo($('body'));
 
 				this.insertIframe(url, prependTarget);
 			},
@@ -42,7 +42,7 @@
 				var parser = document.createElement('a');
 				parser.href = url;
 
-				$('<iframe>', {src:'http://www.backerkit.dev' + parser.pathname + '/iframe', frameBorder: "0", width: prependTarget.width(), height:'352px', scrolling:'no'}).prependTo(prependTarget);
+				$('<iframe>', {src:'https://www.backerkit.com' + parser.pathname + '/iframe', frameBorder: "0", width: prependTarget.width(), height:'352px', scrolling:'no'}).prependTo(prependTarget);
 			}
 		};
 	};
