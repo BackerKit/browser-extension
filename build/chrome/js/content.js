@@ -14,7 +14,8 @@
 			doKickstarter: function(){
 
 				var url = $("*[rel='canonical']").first().attr('href'),
-						prependTarget = $('.container-flex').first();
+						prependTarget = $('.NS_projects__hero_funding .container-flex').first();
+
 
 						if(url === undefined){
 							return;
