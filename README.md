@@ -9,9 +9,9 @@ Shows the stats from your favorite crowdfunding projects
 
 ## Development
 
-# To check your work locally in chrome: 
+# To check your work locally in chrome:
 
-Go to the extensions page and enable developer mode. Disable the chrome store version from the list and enable the local version. You'll need to remember to `gulp` every time you make changes to the code. 
+Go to the extensions page and enable developer mode. Disable the chrome store version from the list and enable the local version. You'll need to remember to `gulp` every time you make changes to the code.
 
 All changes have to be applied into `/js`, `/css`, `/img` folders. To build the sources into corresponding packages run,
 
@@ -24,7 +24,7 @@ The `/build` folder is created. It's recommened to use Chome for development, si
 
 ## Distribution
 
-# To Update the version on the Chrome store: 
+# To Update the version on the Chrome store:
 Need to login to the Google Developer Platform as greetings@backerkit.com and upload the new zipped version from dist/
 
 
@@ -47,3 +47,7 @@ When developing extensions, remember to serve your assets over https
 Based on the Likeastore Browser extension
 https://github.com/likeastore/browser-extension
 MIT info@likeastore.com
+
+# Like what we're doing?
+
+Want to work with us? [We're hiring!](https://www.backerkit.com/jobs)
