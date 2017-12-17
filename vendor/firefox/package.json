@@ -6,7 +6,7 @@
 	"author": "greetings@backerkit.com",
 	"url": "https://backerkit.com",
 	"name": "BackerTracker",
-	"version": "0.0.1",
+	"version": "0.0.14",
 	"lib": "data",
 	"main": "data/main",
 	"data": "data",

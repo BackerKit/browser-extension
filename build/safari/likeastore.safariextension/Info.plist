@@ -40,7 +40,7 @@
 	<key>Description</key>
 	<string>Track your favorite crowdfunding projects on BackerKit</string>
 	<key>ExtensionInfoDictionaryVersion</key>
-	<string>1.0</string>
+	<string>1.14</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
